@@ -6,7 +6,9 @@ UnitTypes.nova.abilities.add(new ForceFieldAbility(24.0, 1.0, 200.0, 60.0 * 15,6
 UnitTypes.bryde.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60.0 * 6.0, 60.0 * 6.0, 60.0));
 UnitTypes.bryde.abilities.add(new StatusFieldAbility(StatusEffects.overdrive, 60.0 * 6.0, 60.0 * 6.0, 60.0));
 UnitTypes.bryde.rotateSpeed=1000;
-UnitTypes.bryde.weapons.each(funiweapon=>funiweapon.rotateSpeed=1000);
+UnitTypes.bryde.weapons.get(0).rotateSpeed=1000;
+UnitTypes.bryde.weapons.get(1).rotateSpeed=1000;
+UnitTypes.bryde.weapons.get(2).rotateSpeed=1000;
 UnitTypes.bryde.abilities.add(new RepairFieldAbility(100,600,80));
 UnitTypes.bryde.buildSpeed=10;
 UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.nova,10*60,0.0,0.0));
