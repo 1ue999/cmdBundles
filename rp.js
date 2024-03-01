@@ -2,6 +2,15 @@ print('Retrieved Code For RP');
 
 UnitTypes.nova.abilities.add(new ForceFieldAbility(24.0, 1.0, 200.0, 60.0 * 15,6,0));
 UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.nova,10*60,0.0,0.0));
+UnitTypes.nova.buildSpeed=10;
+UnitTypes.nova.weapons.get(0).bullet.intervalBullet=UnitTypes.quasar.weapons.get(0).bullet.copy();
+UnitTypes.nova.weapons.get(0).bullet.intervalRandomSpread=0;
+UnitTypes.nova.weapons.get(0).bullet.bulletInterval=2;
+UnitTypes.nova.weapons.get(0).bullet.intervalSpread=120;
+UnitTypes.nova.weapons.get(0).bullet.intervalBullets=3;
+UnitTypes.nova.weapons.get(0).bullet.speed=10.4;
+UnitTypes.nova.weapons.get(0).bullet.lifetime=15;
+UnitTypes.nova.weapons.get(0).bullet.intervalBullet.damage=8;
 
 UnitTypes.bryde.weapons.get(0).shootStatus=StatusEffects.unmoving
 UnitTypes.bryde.weapons.get(0).shootStatusDuration=66;
@@ -14,7 +23,7 @@ UnitTypes.bryde.weapons.get(1).rotateSpeed=1000;
 UnitTypes.bryde.weapons.get(2).rotateSpeed=1000;
 UnitTypes.bryde.abilities.add(new RepairFieldAbility(50,60,80));
 UnitTypes.bryde.buildSpeed=10;
-UnitTypes.bryde.weapons.get(0).bullet.fragBullets=8;
+UnitTypes.bryde.weapons.get(0).bullet.fragBullets=16;
 UnitTypes.bryde.weapons.get(0).bullet.fragBullet=Blocks.salvo.ammoTypes.get(Items.thorium).copy();
 UnitTypes.bryde.weapons.get(0).bullet.despawnHit=true;
 UnitTypes.bryde.weapons.get(0).bullet.fragBullet.speed=8;
