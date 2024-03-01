@@ -9,7 +9,7 @@ UnitTypes.nova.weapons.get(0).bullet.bulletInterval=2;
 UnitTypes.nova.weapons.get(0).bullet.intervalSpread=120;
 UnitTypes.nova.weapons.get(0).bullet.intervalBullets=3;
 UnitTypes.nova.weapons.get(0).bullet.speed=10.4;
-UnitTypes.nova.weapons.get(0).bullet.lifetime=15;
+UnitTypes.nova.weapons.get(0).bullet.range=305;
 UnitTypes.nova.weapons.get(0).bullet.intervalBullet.damage=8;
 
 UnitTypes.bryde.weapons.get(0).shootStatus=StatusEffects.unmoving
