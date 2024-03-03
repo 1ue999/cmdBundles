@@ -1,6 +1,6 @@
 print('Retrieved Code For RP');
 
-UnitTypes.nova.abilities.add(new ForceFieldAbility(24.0, 1.0, 200.0, 60.0 * 15,6,0));
+UnitTypes.nova.abilities.add(new ForceFieldAbility(32.0, 2.5, 500.0, 60.0 * 10,8,0));
 UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.nova,10*60,0.0,0.0));
 UnitTypes.nova.buildSpeed=10;
 UnitTypes.nova.weapons.get(0).bullet.intervalBullet=UnitTypes.quasar.weapons.get(0).bullet.copy();
