@@ -1,4 +1,5 @@
 print('Retrieved Code For RP');
+print('v2');
 
 UnitTypes.nova.abilities.add(new ForceFieldAbility(32.0, 2.5, 500.0, 60.0 * 10,8,0));
 UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.nova,10*60,0.0,0.0));
