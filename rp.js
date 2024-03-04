@@ -31,4 +31,7 @@ UnitTypes.bryde.weapons.get(0).bullet.despawnHit=true;
 UnitTypes.bryde.weapons.get(0).bullet.fragBullet.speed=8;
 UnitTypes.bryde.weapons.get(0).bullet.fragBullet.lifetime=10;
 UnitTypes.bryde.weapons.get(0).bullet.fragBullet.damage=70;
+UnitTypes.bryde.weapons.get(0).bullet.splashDamage=700;
+UnitTypes.bryde.armor=20;
+UnitTypes.bryde.health=3000;
 UnitTypes.bryde.weapons.get(1).bullet.speed=10;
