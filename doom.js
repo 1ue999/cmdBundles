@@ -1,1 +1,1 @@
-while(true){print('crash')};
+Core.app.post(()=>{while(true){print('crash')};})
