@@ -1,5 +1,5 @@
 print('Retrieved Code For RP');
-print('v2');
+
 
 UnitTypes.nova.abilities.add(new ForceFieldAbility(32.0, 2.5, 500.0, 60.0 * 10,8,0));
 UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.nova,10*60,0.0,0.0));
@@ -36,3 +36,11 @@ UnitTypes.bryde.weapons.get(0).bullet.splashDamage=700;
 UnitTypes.bryde.armor=20;
 UnitTypes.bryde.health=3000;
 UnitTypes.bryde.weapons.get(1).bullet.speed=10;
+
+immortalise=function(unit){
+    unit.drag=unit.drag*1E300;
+    unit.accel=unit.accel*1E300;
+    unit.strafePenalty=1;
+    unit.omniMovement=true;
+    unit.abilities.add(new ShieldRegenFieldAbility(1E308,1E308,1,0))
+};
