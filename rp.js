@@ -8,10 +8,10 @@ Object.assign(UnitTypes.nova,{
 });
 UnitTypes.nova.abilities.add(new ForceFieldAbility(40.0, 8, 800.0, 60.0 * 10,8,0));
 UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.nova,10*60,0.0,0.0));
-UnitTypes.nova.weapons.each((e)=>{
-    e.bullet=railgunThing;
-    e.shootSound=Sounds.railgun;
-});
+UnitTypes.nova.weapons.get(0).bullet=railgunThing;
+UnitTypes.nova.weapons.get(0).shootSound=Sounds.railgun;
+UnitTypes.nova.weapons.get(1).bullet=railgunThing;
+UnitTypes.nova.weapons.get(1).shootSound=Sounds.railgun;
 Object.assign(railgunThing,{
     damage: 400,
     pointEffect: Fx.railTrail,
