@@ -18,7 +18,7 @@ Object.assign(railgunThing,{
     length: 800
 });
 
-UnitTypes.bryde.weapons.get(0).shootStatus=StatusEffects.unmoving
+UnitTypes.bryde.weapons.get(0).shootStatus=StatusEffects.unmoving;
 UnitTypes.bryde.weapons.get(0).shootStatusDuration=66;
 UnitTypes.bryde.flying=true;
 UnitTypes.bryde.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 60.0 * 6.0, 60.0 * 6.0, 60.0));
