@@ -1,5 +1,5 @@
 print('Retrieved Code For RP');
-print('v2 ultrakill')
+print('v2 ultrakill');
 let railgunThing=new RailBulletType();
 Object.assign(UnitTypes.nova,{
     buildSpeed: 10,
