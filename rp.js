@@ -1,19 +1,22 @@
 print('Retrieved Code For RP');
 
-
-UnitTypes.nova.abilities.add(new ForceFieldAbility(32.0, 2.5, 500.0, 60.0 * 10,8,0));
+let railgunThing=new RailBulletType();
+Object.assign(UnitTypes.nova,{
+    buildSpeed: 10,
+    health: 4000,
+    armor: 18
+});
+UnitTypes.nova.abilities.add(new ForceFieldAbility(40.0, 8, 800.0, 60.0 * 10,8,0));
 UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.nova,10*60,0.0,0.0));
-UnitTypes.nova.buildSpeed=10;
-UnitTypes.nova.weapons.get(0).bullet.intervalBullet=UnitTypes.quasar.weapons.get(0).bullet.copy();
-UnitTypes.nova.weapons.get(0).bullet.intervalRandomSpread=0;
-UnitTypes.nova.weapons.get(0).bullet.bulletInterval=2;
-UnitTypes.nova.weapons.get(0).bullet.intervalSpread=120;
-UnitTypes.nova.weapons.get(0).bullet.intervalBullets=3;
-UnitTypes.nova.weapons.get(0).bullet.speed=10.4;
-UnitTypes.nova.range=305;
-UnitTypes.nova.weapons.get(0).bullet.intervalBullet.damage=8;
-UnitTypes.nova.health=850;
-UnitTypes.nova.armor=7;
+UnitTypes.nova.weapons.each((e)=>{
+    e.bullet=railgunThing;
+    e.shootSound=Sounds.railgun;
+});
+Object.assign(railgunThing,{
+    damage: 400,
+    pointEffect: Fx.railTrail,
+    length: 800
+});
 
 UnitTypes.bryde.weapons.get(0).shootStatus=StatusEffects.unmoving
 UnitTypes.bryde.weapons.get(0).shootStatusDuration=66;
