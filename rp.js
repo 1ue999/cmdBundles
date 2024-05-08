@@ -7,7 +7,7 @@ Object.assign(UnitTypes.nova,{
     armor: 18
 });
 UnitTypes.nova.abilities.add(new ForceFieldAbility(40.0, 8, 800.0, 60.0 * 10,8,0));
-UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.nova,10*60,0.0,0.0));
+UnitTypes.nova.abilities.add(new UnitSpawnAbility(UnitTypes.quasar5*60,0.0,0.0));
 UnitTypes.nova.weapons.get(0).bullet=railgunThing;
 UnitTypes.nova.weapons.get(0).shootSound=Sounds.railgun;
 UnitTypes.nova.weapons.get(1).bullet=railgunThing;
